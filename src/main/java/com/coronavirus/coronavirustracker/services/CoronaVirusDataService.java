@@ -40,7 +40,7 @@ public class CoronaVirusDataService {
 		this.newStatsForIndia = newStatsForIndia;
 	}
 	@PostConstruct
-	@Scheduled(cron = "0 10 6 1/1 * ? *")
+	@Scheduled(cron = "0 10 6 1/1 * ?")
 	public void fetchVirusData() throws IOException, InterruptedException {
 		List<LocationStats> newStats=new ArrayList<LocationStats>();
 		
