@@ -66,6 +66,7 @@ public class CoronaVirusDataService {
 			
 		    newStats.add(locationStats);
 		    if(record.get("Country/Region").equalsIgnoreCase("India")) {
+			newStatsForIndia.clear();
 		    	LocationStats locationStatsForIndia=new LocationStats();
 		    	locationStatsForIndia.setCountry(record.get("Country/Region"));
 		    	locationStatsForIndia.setState(record.get("Province/State"));
